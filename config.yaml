@@ -5,7 +5,7 @@ app:
   port: 8000
 
 paths:
-  thesis_pdf: "path/to/your/thesis.pdf"
+  thesis_pdf: "data/thesis.pdf"
   vector_store: "data/vector_store"
 
 embedding:
