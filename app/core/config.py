@@ -1,5 +1,7 @@
 import yaml
 from pydantic_settings import BaseSettings
+from dotenv import load_dotenv
+load_dotenv()
 
 class Settings(BaseSettings):
     app_name: str
@@ -14,6 +16,9 @@ class Settings(BaseSettings):
     vector_store_type: str
     chunk_size: int
     chunk_overlap: int
+    groq_api_key: str
+    caching_enabled: bool
+    cache_dir: str
     groq_api_key: str
 
     class Config:

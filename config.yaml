@@ -13,7 +13,7 @@ embedding:
 
 llm:
   provider: "groq"
-  model: "llama3-70b-8192"
+  model: "mixtral-8x7b-32768"
 
 vector_store:
   type: "faiss"
@@ -21,3 +21,8 @@ vector_store:
 chunking:
   chunk_size: 500
   chunk_overlap: 50
+
+caching:
+  enabled: true
+  cache_dir: "data/cache"
+
