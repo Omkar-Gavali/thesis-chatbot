@@ -1,0 +1,23 @@
+app:
+  name: "Thesis RAG System"
+  version: "1.0.0"
+  host: "0.0.0.0"
+  port: 8000
+
+paths:
+  thesis_pdf: "path/to/your/thesis.pdf"
+  vector_store: "data/vector_store"
+
+embedding:
+  model: "sentence-transformers/all-mpnet-base-v2"
+
+llm:
+  provider: "groq"
+  model: "llama3-70b-8192"
+
+vector_store:
+  type: "faiss"
+
+chunking:
+  chunk_size: 500
+  chunk_overlap: 50
